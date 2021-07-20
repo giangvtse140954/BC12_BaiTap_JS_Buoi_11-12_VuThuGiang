@@ -19,7 +19,7 @@ const validateForm = function (user) {
       'Tài khoản không được rỗng';
     r = false;
   } else {
-    document.querySelector('#tbTaiKhoan').style.display = 'none';
+    document.querySelector('#tbTaiKhoan').innerHTML = '';
   }
   // Check fullname
   if (
@@ -65,7 +65,7 @@ const validateForm = function (user) {
       'Hình ảnh không được để trống';
     r = false;
   } else {
-    document.querySelector('#tbHinhAnh').style.display = 'none';
+    document.querySelector('#tbHinhAnh').innerHTML = '';
   }
 
   // CheckLoaiND
@@ -74,7 +74,7 @@ const validateForm = function (user) {
       'Vui lòng chọn loại người dùng';
     r = false;
   } else {
-    document.querySelector('#tbLoaiND').style.display = 'none';
+    document.querySelector('#tbLoaiND').innerHTML = '';
   }
 
   // CheckLoaiNN
@@ -83,7 +83,7 @@ const validateForm = function (user) {
       'Vui lòng chọn loại ngôn ngữ';
     r = false;
   } else {
-    document.querySelector('#tbLoaiNN').style.display = 'none';
+    document.querySelector('#tbLoaiNN').innerHTML = '';
   }
 
   // Check description
@@ -92,7 +92,7 @@ const validateForm = function (user) {
       'Mô tả không được để trống và phải dưới 60 kí tự';
     r = false;
   } else {
-    document.querySelector('#tbMoTa').style.display = 'none';
+    document.querySelector('#tbMoTa').innerHTML = '';
   }
   return r;
 };
